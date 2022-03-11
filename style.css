@@ -239,6 +239,7 @@ a {
     padding: 10px;
     border-radius: 30px;
     transition:.4s;
+    margin-right: 10px;
 }
 
 .btn:hover {
