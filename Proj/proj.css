@@ -5,21 +5,17 @@
     font-family: 'Josefin Sans' , sans-serif;
 }
 
+
 .main {
     height: 100vh;
-    width: 100%;
     background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/1400/d1b29a23622187.563260170f313.jpg);
-    background-size: cover;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-nav{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-right: 8%;
-    padding-top: 45px;
-    padding-left: 8%;
+body {
+    background-color: #000;
 }
 
 .logo {
@@ -35,7 +31,7 @@ span {
 
 nav ul li {
     display: inline-block;
-    padding: 10px 25px;
+    padding: 10px 15px;
 }
 
 nav ul li a {
@@ -50,17 +46,139 @@ nav ul li a:hover {
     transition: .5s;
 }
 
-.btn {
-    background-color: #8cecc2;
-    color: #fafafa;
-    text-decoration: none;
-    border: 2px solid transparent;
-    font-weight: bold;
-    padding: 10px;
-    border-radius: 30px;
-    transition: transform.4s;
+
+
+.bottom-left {
+    position: absolute;
+    top: 50%;
+    left: 8%;
 }
 
-.btn:hover {
-    transform: scale(1.2);
-}
+a {
+    color: #000;
+  }
+  
+  /* header */
+  
+  .header {
+    background-color: #191919;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+  }
+  
+  .header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #191919;
+  }
+  
+  .header li a {
+    display: block;
+    padding: 20px 20px;
+    border-right: 1px solid #191919;
+    text-decoration: none;
+  }
+  
+  .header li a:hover,
+  .header .menu-btn:hover {
+    background-color: #191919;
+  }
+  
+  .header .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+  /* menu */
+  
+  .header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+  
+  /* menu icon */
+  
+  .header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+  
+  .header .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition:  .2s ease-out;
+    width: 18px;
+  }
+  
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .header .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+  .header .menu-icon .navicon:after {
+    top: -5px;
+  }
+  
+  /* menu btn */
+  
+  .header .menu-btn {
+    display: none;
+  }
+  
+  .header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+
+
+
+
+  
+
+
+
+
+
+
+
+
