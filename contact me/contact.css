@@ -113,7 +113,7 @@ a {
   }
   
   .header .menu-icon .navicon {
-    background: #333;
+    background: #fafafa;
     display: block;
     height: 2px;
     position: relative;
@@ -123,7 +123,7 @@ a {
   
   .header .menu-icon .navicon:before,
   .header .menu-icon .navicon:after {
-    background: #333;
+    background: #fafafa;
     content: '';
     display: block;
     height: 100%;
@@ -197,6 +197,7 @@ section {
 }
 .contact .contact-content .left p{
     text-align: justify;
+    margin-left: 30px;
 }
 .contact .contact-content .left .icons{
     margin: 10px 0;

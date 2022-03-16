@@ -116,7 +116,7 @@ a {
   }
   
   .header .menu-icon .navicon {
-    background: #333;
+    background: #fafafa;
     display: block;
     height: 2px;
     position: relative;
@@ -126,7 +126,7 @@ a {
   
   .header .menu-icon .navicon:before,
   .header .menu-icon .navicon:after {
-    background: #333;
+    background: #fafafa;
     content: '';
     display: block;
     height: 100%;
@@ -189,6 +189,12 @@ section {
 
 .skills-header {
     margin-bottom: 30px;
+}
+
+.center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 
