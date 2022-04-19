@@ -218,6 +218,7 @@ section {
 }
 .contact .contact-content .info .sub-title{
     color: #8cecc2;
+    font-size: 20px;
 }
 .contact .right form .fields{
     display: flex;
@@ -271,6 +272,7 @@ section {
   background: #8cecc2;
   border: 2px solid #8cecc2;
   transition: all 0.3s ease;
+  padding: 3px;
 }
 .right form .button-area button:hover{
   color: #8cecc2;
